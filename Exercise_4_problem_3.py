@@ -65,6 +65,22 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 
 
 # YOUR CODE HERE
+#import temp_functions.py
+import temp_functions as tf
+
+# empty list  
+temp_classes = []
+temp_celsius = []
+
+# fill in empty list using "temp_functions.py"
+for i in range(len(temp_data)):
+  temp_classes.append(tf.temp_classifier(temp_data[i]))
+  temp_celsius.append(tf.fahr_to_celsius(temp_data[i]))
+
+
+
+# print(temp_classes)
+# print(temp_celsius)
 
 # #### Part 2 (continues)
 # 
@@ -75,6 +91,21 @@ temp_data =  [19, 21, 21, 21, 23, 23, 23, 21, 19, 21, 19, 21, 23, 27, 27, 28, 30
 #   
 
 # YOUR CODE HERE
+# variable = 0
+zeros, ones, twos, threes = 0, 0 ,0, 0
+
+# count temp_classes's number (0,1,2,3)
+for i in range(len(temp_classes)):
+  if(0 == temp_classes[i]):
+    zeros += 1
+  elif(1 == temp_classes[i]): 
+    ones += 1
+  elif(2 == temp_classes[i]): 
+    twos += 1
+  elif(3 == temp_classes[i]): 
+    threes += 1
+
+
 
 # **TIP**: You might want to consider using a [**count()** function](https://www.tutorialspoint.com/python3/list_count.htm) OR a for loop for this.
 

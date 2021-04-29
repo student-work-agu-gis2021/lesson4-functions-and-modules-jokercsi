@@ -22,7 +22,7 @@
 def fahr_to_celsius(temp_fahreheit):
   """
     conversion formula from Fahrenheit to Celsius
-    :return: converted_temp
+    :return: converted_temp : number
   """
   converted_temp = (temp_fahreheit - 32) / 1.8
   return converted_temp
