@@ -19,12 +19,24 @@
 # - Adding comments in your code and a docstring that explains how to use your `fahr_to_celsius` function (i.e., you should write the purpose of the function, parameters, and returned values)
 
 # YOUR CODE HERE
+def fahr_to_celsius(temp_fahreheit):
+  """
+    conversion formula from Fahrenheit to Celsius
+    :return: converted_temp
+  """
+  converted_temp = (temp_fahreheit - 32) / 1.8
+  return converted_temp
 
 # ### Problem 1 tests
 # 
 # Check that the function produces correct answers for:
 # 1. What is 48° Fahrenheit in Celsius? 
+print(fahr_to_celsius(48))
+# = 8.88888888888889
+
 # 2. What about 71° Fahrenheit in Celsius?
+print(fahr_to_celsius(71))
+# = 21.666666666666668
 
 # ### Check your code
 # 
@@ -38,14 +50,11 @@
 # 
 #   1. Is the concept of function clear to you? If not, what do you not understand?
 #   2. What are some of the benefits of using functions?
-#   
 # Write your answers below:
 
 # YOUR ANSWER HERE. Write your answers as comments
-#
-#
-#
-#
+# 1. It crystal clear
+# 2. function can make program more efficient, It reduce repetition of code and avoid the situation of same process. 
 
 # #### Done!
 # 
